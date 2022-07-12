@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Animation</title>
+        <style>
+            div{
+                height: 200px;
+                width: 200px;
+                position: relative;
+                background-color: rgb(197, 236, 135);
+                animation-name: try;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes try{
+                0%{background-color: beige;left: 0px; top: 0px; transform: rotate(0deg);}
+                25%{background-color: rgb(179, 221, 123);left: 200px; top: 0px; transform: rotate(90deg);}
+                50%{background-color: rgb(122, 187, 202);left: 200px; top: 200px; transform: scale(1.2,1.2);}
+                75%{background-color: rgb(217, 159, 226);left: 0px; top: 200px; transform: rotate(90deg);}
+                100%{background-color: rgb(99, 94, 94);left: 0px; top: 0px; transform: scale(0.5,0.5);}
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>hi</div>
+    </body>
+</html>
